@@ -52,11 +52,12 @@ $recaptcha = new ReCaptcha($sitekey, $secretkey);
 					</ul>
 				</nav>
 				<h3 class="text-muted">Google reCAPTCHA PHP Class</h3>
+				<small>by <a href="http://tribulant.com">Tribulant Software</a></small>
 			</div>
 		
 			<div class="jumbotron">
 				<h1>Test It Out</h1>
-				<p class="lead">Test out Google reCAPTCHA with PHP by using the no captcha reCAPTCHA, then click "Verify Response" to see if it is correct.</p>
+				<p class="lead">Test out <a href="http://www.google.com/recaptcha/" target="_blank">Google reCAPTCHA</a> with PHP by using the no captcha reCAPTCHA, then click "<strong>Verify Response</strong>" to see if it is correct.</p>
 				
 				<?php
 					
@@ -79,7 +80,7 @@ $recaptcha = new ReCaptcha($sitekey, $secretkey);
 				?>
 				
 				<form action="" method="post">
-					<div style="margin:20px auto; width:300px;">
+					<div class="center-block" style="width:300px; margin:20px auto;">
 						<?php $recaptcha -> widget(); ?>
 					</div>
 					<p><input class="btn btn-lg btn-success" type="submit" name="submit" value="Verify Response" /></p>
@@ -95,29 +96,37 @@ $recaptcha = new ReCaptcha($sitekey, $secretkey);
 				
 				<div class="col-lg-6">
 					<h3>1. Download the ZIP</h3>
-					<p>Download the ZIP file with all the files from the Github recaptcha repository.</p>
+					<p><a href="https://github.com/TribulantSoftware/recaptcha/archive/master.zip">Download the ZIP</a> file with all the files from the <a href="https://github.com/TribulantSoftware/recaptcha">Github recaptcha repository</a>.</p>
+					<p><a href="https://github.com/TribulantSoftware/recaptcha/archive/master.zip" class="btn btn-primary">Download</a></p>
 		
-					<h4>Subheading</h4>
-					<p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.</p>
-		
-					<h4>Subheading</h4>
-					<p>Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+					<h3>3. Copy Class Files</h3>
+					<p>There is a main <code>class.recaptcha.php</code> file and then a <code>class.http.php</code> file. Copy both files over to where you want to use it.</p>
 				</div>
 		
 				<div class="col-lg-6">
-					<h4>Subheading</h4>
-					<p>Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.</p>
+					<h3>2. Get reCAPTCHA Keys</h3>
+					<p>Add your domain(s) to get a site- and secret key for Google reCAPTCHA.</p>
+					<p><a href="http://www.google.com/recaptcha/" target="_blank" class="btn btn-info">Get reCAPTCHA Keys</a></p>
 		
-					<h4>Subheading</h4>
-					<p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.</p>
-		
-					<h4>Subheading</h4>
-					<p>Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+					<h3>4. Reference Example</h3>
+					<p>The example file is <code>index.php</code> which shows you how to use the reCAPTCHA PHP class.</p>
+				</div>
+			</div>
+			
+			<div class="row marketing">
+				<div class="col-md-12">
+					<h2>PHP reCAPTCHA Example</h2>
+					<p>Here is a quick example on how to use the class, it really is easy!</p>
+					<!-- https://gist.github.com/tribulant/2c9c03c768ad80cafa92 -->
+					<script src="https://gist.github.com/tribulant/2c9c03c768ad80cafa92.js"></script>
 				</div>
 			</div>
 		
 			<footer class="footer">
 				<p>&copy; <a href="http://tribulant.com" title="Premium WordPress plugins">Tribulant Software</a> <?php echo date('Y'); ?></p>
+				<p class="text-center">
+					<a href="http://tribulant.com"><img src="http://tribulant.com/img/logo-grey.png" alt="tribulant" /></a>
+				</p>
 			</footer>
 		</div> <!-- /container -->
     </body>
